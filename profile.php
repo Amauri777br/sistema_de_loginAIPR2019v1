@@ -30,7 +30,7 @@ require_once 'session.php';
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
+                    <a class="nav-link" href="slider.php">Slider</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link 2</a>

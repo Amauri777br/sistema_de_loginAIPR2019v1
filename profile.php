@@ -30,7 +30,7 @@ require_once 'session.php';
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="slider.php">Slider</a>
+                    <a class="nav-link" href="#">Link 1</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link 2</a>
@@ -40,9 +40,9 @@ require_once 'session.php';
                         <?= $usuario ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="slider.php">Fotos</a>
                         <a class="dropdown-item" href="#">Configurações</a>
                         <a class="dropdown-item" href="sair.php">Sair</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
                     </div>
                 </li>
             </ul>

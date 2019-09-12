@@ -63,14 +63,14 @@ require_once 'session.php';
                         <img src="images/paisagem1.jpg" class="d-block w-100" alt="Paiságem Lindona">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Assassins'Creed IV Black Flag</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <p>Pega na minha pistola</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/paisagem2.jpg" class="d-block w-100" alt="Paiságem Lindona">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Assassins'Creed IV Black Flag</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Olha o Barcão</p>
                         </div>
                     </div>
                     <div class="carousel-item">

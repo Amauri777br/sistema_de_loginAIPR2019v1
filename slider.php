@@ -92,7 +92,7 @@ require_once 'session.php';
             </div>
         </div>
 
-        <h1>Hello World!</h1>
+</main>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

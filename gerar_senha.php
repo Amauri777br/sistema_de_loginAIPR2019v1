@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt_br">
+<html lang="pt-br">
 
 <head>
     <!-- Required meta tags -->
@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Crie uma nove senha</title>
+    <title>Crie uma nova senha</title>
 </head>
 
 <body>
@@ -25,22 +25,23 @@
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="senha">
-                            Nova senha
+                            Nova Senha
                         </label>
-                        <input type="password" name="senha" id="senha" class="form-control" placeholder="Nova senha" Required>
+                        <input type="password" name="senha" id="senha" class="form-control" placeholder="Nova Senha" required>
                     </div>
                     <div class="form-group">
-                        <label for="senha">
-                            Corfime a senha
+                        <label for="csenha">
+                            Confirme a Senha
                         </label>
-                        <input type="password" name="csenha" id="csenha" class="form-control" placeholder="Confirme a senha" Required>
+                        <input type="password" name="csenha" id="csenha" class="form-control" placeholder="Nova Senha" required>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value=":: Criar nova senha ::" name="criar" class="btn btn-block" style="background: gray;
-                            color: white; 
-                            font-weight: bolder;
-                            padding: 10px;
-                            font-size: 22px;">
+                        <input type="submit" value=":: Criar nova senha ::" name="criar" class="btn btn-block" style="background: purple; 
+                                color: white; 
+                                font-weight: bolder;
+                                padding: 10px;
+                                font-size: 22px;
+                                box-shadow: 3px 3px 3px gray;">
                     </div>
                 </form>
             </div>

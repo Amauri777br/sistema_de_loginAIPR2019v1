@@ -41,8 +41,9 @@ require_once 'session.php';
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="slider.php">Fotos</a>
-                        <a class="dropdown-item" href="#">Configurações</a>
+                        <a class="dropdown-item" href="#">Config.</a>
                         <a class="dropdown-item" href="sair.php">Sair</a>
+
                     </div>
                 </li>
             </ul>

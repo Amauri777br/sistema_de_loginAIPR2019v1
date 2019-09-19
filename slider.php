@@ -4,7 +4,7 @@ require_once 'session.php';
 ?>
 
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -14,7 +14,7 @@ require_once 'session.php';
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Álbum de Fotos</title>
+    <title>Álbun de Fotos</title>
 </head>
 
 <body>
@@ -41,7 +41,7 @@ require_once 'session.php';
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Fotos</a>
-                        <a class="dropdown-item" href="#">Config.</a>
+                        <a class="dropdown-item" href="#">Configurações</a>
                         <a class="dropdown-item" href="sair.php">Sair</a>
                     </div>
                 </li>
@@ -50,6 +50,7 @@ require_once 'session.php';
     </nav>
 
     <main class="container">
+
         <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -59,24 +60,24 @@ require_once 'session.php';
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/cachorro-1300x780.jpg" class="d-block w-100" alt="...">
+                        <img src="images/paisagem1.jpg" class="d-block w-100" alt="Paiságem Lindona">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h5>Assassins'Creed IV Black Flag</h5>
+                            <p>Pega na minha pistola</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/caldo-de-cana-1300x780.jpg" class="d-block w-100" alt="...">
+                        <img src="images/paisagem2.jpg" class="d-block w-100" alt="Paiságem Lindona">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h5>Assassins'Creed IV Black Flag</h5>
+                            <p>Olha o Barcão</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/heavy-metal-1300x780.jpg" class="d-block w-100" alt="...">
+                        <img src="images/paisagem3.jpg" class="d-block w-100" alt="Paiságem Lindona">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5>Assassins'Creed IV Black Flag</h5>
+                            <p>Galerinha da Pesada</p>
                         </div>
                     </div>
                 </div>
@@ -90,6 +91,7 @@ require_once 'session.php';
                 </a>
             </div>
         </div>
+
     </main>
 
     <!-- Optional JavaScript -->

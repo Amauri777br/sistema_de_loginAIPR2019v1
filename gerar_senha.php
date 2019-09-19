@@ -1,4 +1,25 @@
+<?php
+    require_once 'configDB.php';//conexão com o banco de dados
+    if(isset($_GET['token']) && srtlrn($_GET['token']) == 10){
+        $token = $_GET['token'];
+        $sql = $conecta->prepare("SELECT * FROM usuario WHERE token = ? AND tempo_de_vida > now()");
+        $sql->bind_param("s", $token);
+        $sql->execute();
+        $resultado = $sql->get_result();
+        if($resultado-> num_rows > 0){
+            echo "Nova senha:".@$_POST[senha];
+        }else{ //com token
+        header('location: index.php');//KICK DA PÁGINA
+        exit();
+    }else{//sem token
+        header('location: index.php');//KICK DA PÁGINA
+        exit();}
+
+    }
+?>
+
 <!doctype html>
+
 <html lang="pt-br">
 
 <head>
@@ -21,32 +42,28 @@
                 </h3>
                 <h4 class="text-center">
                     <?= @$msg ?>
-                </h4>
+                <h4>
                 <form action="" method="post">
                     <div class="form-group">
-                        <label for="senha">
-                            Nova Senha
-                        </label>
-                        <input type="password" name="senha" id="senha" class="form-control" placeholder="Nova Senha" required>
+                    <label for="senha">Nova Senha</label>
+                        <input  class="form-control "type="password" name="senha" 
+                        id="senha" placeholder="Nova senha" required> 
                     </div>
                     <div class="form-group">
-                        <label for="csenha">
-                            Confirme a Senha
-                        </label>
-                        <input type="password" name="csenha" id="csenha" class="form-control" placeholder="Nova Senha" required>
+                    <label for="csenha"> Confirme a Nova Senha</label>
+                        <input  class="form-control "type="password" name="csenha" 
+                        id="csenha" placeholder=" Confirma a Nova senha" required> 
                     </div>
                     <div class="form-group">
-                        <input type="submit" value=":: Criar nova senha ::" name="criar" class="btn btn-block" style="background: purple; 
-                                color: white; 
-                                font-weight: bolder;
-                                padding: 10px;
-                                font-size: 22px;
-                                box-shadow: 3px 3px 3px gray;">
+                        <input type="submit" value=" :: Gerar nova senha ::" 
+                        name="criar" class="btn btn-primary btn-block" style="background: deepSkyBlue color: black; 
+                        font-weigth:  bolder; padding: 10px; font-size: 22px; box-shadow: 3px 3px 5px black;">
                     </div>
                 </form>
             </div>
         </section>
     </main>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
